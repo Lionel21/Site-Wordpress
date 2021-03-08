@@ -1,3 +1,5 @@
-<?php
+<?php get_header() ?>
 
-echo 'Bonjour tout le monde';
+    Hello World!
+
+<?php get_footer() ?>
