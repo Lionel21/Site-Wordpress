@@ -1,3 +1,5 @@
-<?php
+<?php get_header() ?>
 
-echo 'Bonjour tout le monde';
+    Bienvenue sur Mon Site!
+
+<?php get_footer() ?>
