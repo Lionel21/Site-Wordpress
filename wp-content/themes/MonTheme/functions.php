@@ -8,7 +8,10 @@ function myTheme_support() {
 
 function myTheme_register_assets() {
     wp_register_style('Bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
+    wp_register_script('Bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js', ['Popper']);
+    wp_register_script('Popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js');
     wp_enqueue_style('Bootstrap');
+    wp_enqueue_script('Bootstrap');
 }
 
 

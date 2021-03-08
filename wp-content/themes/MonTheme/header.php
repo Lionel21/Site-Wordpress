@@ -7,6 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head() ?>
 
-</head>
-<body>
+    <div class="container">
+
 
