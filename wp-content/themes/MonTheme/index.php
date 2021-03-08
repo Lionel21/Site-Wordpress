@@ -1,5 +1,5 @@
 <?php get_header() ?>
 
-    Hello World!
+    Bienvenue sur Mon Site!
 
 <?php get_footer() ?>
