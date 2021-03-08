@@ -4,6 +4,7 @@ namespace App;
 
 function myTheme_support() {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 }
 
 function myTheme_register_assets() {
@@ -14,9 +15,10 @@ function myTheme_register_assets() {
     wp_enqueue_script('Bootstrap');
 }
 
-
+function myTheme_title_separator() {
+    return '|';
+}
 
 add_action('after_setup_theme', 'App\myTheme_support');
 add_action('wp_enqueue_scripts', 'App\myTheme_register_assets');
-
-?>
+add_filter('document_title_separator', 'App\myTheme_title_separator');
