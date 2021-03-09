@@ -18,6 +18,12 @@
             </div>
         <?php endwhile ?>
     </div>
+
+    <?php \App\myTheme_pagiantion() ?>
+
+
+<!--    --><?//= paginate_links() ?>
+
 <?php else: ?>
     <h1>Aucun article</h1>
 <?php endif; ?>
